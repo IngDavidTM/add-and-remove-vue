@@ -125,7 +125,7 @@ Open index.html in the browser
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/IngDavidTM/vue-course-goals/issues).
+Feel free to check the [issues page](https://github.com/IngDavidTM/add-and-remove-vue/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
