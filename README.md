@@ -90,7 +90,7 @@ Clone this repository to your desired folder:
 
 ```sh
   git clone git@github.com:IngDavidTM/add-and-remove-vue.git
-  cd vue-course-goals
+  cd add-and-remove-vue
 ```
 
 ### Usage
