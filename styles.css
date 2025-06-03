@@ -8,12 +8,14 @@ html {
 
 body {
   margin: 0;
+  background: linear-gradient(180deg, #e8f5f0 0%, #ffffff 100%);
+  min-height: 100vh;
 }
 
 header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   margin: 3rem auto;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem;
   background-color: #4fc08d;
   color: white;
@@ -23,13 +25,14 @@ header {
 }
 
 #events {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin: 3rem auto;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
   text-align: center;
   width: 90%;
   max-width: 40rem;
+  background-color: #ffffff;
 }
 
 #events h2 {
@@ -37,6 +40,7 @@ header {
   border-bottom: 4px solid #ccc;
   color: #4fc08d;
   margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
 }
 
 #events p {
@@ -47,34 +51,50 @@ header {
   color: white;
   padding: 0.5rem;
   border-radius: 25px;
+  margin: 0.5rem 0;
 }
 
 #events input {
   font: inherit;
   border: 1px solid #ccc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
 }
 
 #events input:focus {
   outline: none;
   border-color: #1b995e;
   background-color: #d7fdeb;
+  box-shadow: 0 0 4px rgba(27, 153, 94, 0.5);
 }
 
 #events button {
   font: inherit;
   cursor: pointer;
-  border: 1px solid #ff0077;
-  background-color: #ff0077;
-  color: white;
-  padding: 0.05rem 1rem;
+  border: none;
+  padding: 0.35rem 1.25rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
   border-radius: 20px;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-#events button:hover,
-#events button:active {
+.btn-add {
+  background-color: #1b995e;
+  color: white;
+}
+
+.btn-remove {
+  background-color: #ff0077;
+  color: white;
+}
+
+.btn-add:hover,
+.btn-add:active {
+  background-color: #17814d;
+}
+
+.btn-remove:hover,
+.btn-remove:active {
   background-color: #ec3169;
-  border-color: #ec3169;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
