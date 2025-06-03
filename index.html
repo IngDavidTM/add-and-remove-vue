@@ -22,7 +22,9 @@
       <h2>Events in Action</h2>
       <button v-on:click="add(1)" class="btn-add">Add</button>
       <button v-on:click="reduce(1)" class="btn-remove">Remove</button>
-      <p v-once>Starting Counter: {{ counter }}</p>
+      <input type="number" v-model.number="startValue" />
+      <button v-on:click="applyStartValue" class="btn-add">Set Starting Value</button>
+      <p>Starting Counter: {{ startValue }}</p>
       <p>Result: {{ counter }}</p>
       <input
         v-on:input="setName('Tamayo', $event)"

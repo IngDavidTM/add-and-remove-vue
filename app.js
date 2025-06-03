@@ -1,7 +1,8 @@
 const app = Vue.createApp({
   data() {
     return {
-      counter: 10,
+      counter: 0,
+      startValue: 0,
       name: '',
       confirmedName: '',
       darkMode: false,
@@ -16,6 +17,9 @@ const app = Vue.createApp({
     },
     reduce(num) {
       this.counter -= num;
+    },
+    applyStartValue() {
+      this.counter = this.startValue;
     },
     setName(lastName, e) {
       this.name = e.target.value + ' ' + lastName;
